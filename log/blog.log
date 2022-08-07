@@ -1,0 +1,129 @@
+2022-07-22 10:36:43.017  INFO 17836 --- [restartedMain] c.t.TurkcellAtmProjectApplication        : Starting TurkcellAtmProjectApplication using Java 18.0.1.1 on TC20033559 with PID 17836 (D:\TurkcellAtmProject\target\classes started by TCBZOR in D:\TurkcellAtmProject)
+2022-07-22 10:36:43.018  INFO 17836 --- [restartedMain] c.t.TurkcellAtmProjectApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:36:43.060  INFO 17836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-22 10:36:43.060  INFO 17836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-22 10:36:43.829  INFO 17836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-22 10:36:43.830  INFO 17836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-07-22 10:36:43.838  INFO 17836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2022-07-22 10:36:43.844  INFO 17836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-22 10:36:43.845  INFO 17836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-22 10:36:43.849  INFO 17836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2022-07-22 10:36:44.500  INFO 17836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-22 10:36:44.508  INFO 17836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-22 10:36:44.508  INFO 17836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-07-22 10:36:44.670  INFO 17836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-22 10:36:44.670  INFO 17836 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1609 ms
+2022-07-22 10:36:44.777  INFO 17836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-22 10:36:45.038  INFO 17836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-22 10:36:45.046  INFO 17836 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/turkcell_db'
+2022-07-22 10:36:45.192  INFO 17836 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-22 10:36:45.243  INFO 17836 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-07-22 10:36:45.376  INFO 17836 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-22 10:36:45.468  INFO 17836 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-22 10:36:45.488  WARN 17836 --- [restartedMain] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@7d724d4 marked as broken because of SQLSTATE(0A000), ErrorCode(0)
+
+java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:699) ~[postgresql-42.3.6.jar:42.3.6]
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1347) ~[postgresql-42.3.6.jar:42.3.6]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.createClob(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:121) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:56) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:286) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at com.turkcell.TurkcellAtmProjectApplication.main(TurkcellAtmProjectApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.2.jar:2.7.2]
+
+2022-07-22 10:36:45.688  INFO 17836 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-22 10:36:45.694  INFO 17836 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-22 10:36:45.809  WARN 17836 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-22 10:36:46.589  WARN 17836 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-22 10:36:46.818  WARN 17836 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bbbf8e12-6e9e-4d3c-898a-abfecf9c848e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-22 10:36:46.910  INFO 17836 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-22 10:36:46.920  INFO 17836 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4447b356, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fd65024, org.springframework.security.web.context.SecurityContextPersistenceFilter@39a6a9b2, org.springframework.security.web.header.HeaderWriterFilter@457dec02, org.springframework.web.filter.CorsFilter@2c6aae22, org.springframework.security.web.csrf.CsrfFilter@154d6fa9, org.springframework.security.web.authentication.logout.LogoutFilter@63dcd1c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4abd5fd5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3858f713, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3f789f69, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3773892b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62a28bc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f31079, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46dc56d3, org.springframework.security.web.session.SessionManagementFilter@6599a166, org.springframework.security.web.access.ExceptionTranslationFilter@268065c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8d7edf4]
+2022-07-22 10:36:47.043  INFO 17836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-22 10:36:47.086  INFO 17836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-22 10:36:47.101  INFO 17836 --- [restartedMain] c.t.TurkcellAtmProjectApplication        : Started TurkcellAtmProjectApplication in 4.411 seconds (JVM running for 5.028)
+2022-07-22 10:37:55.756  INFO 6564 --- [restartedMain] c.t.TurkcellAtmProjectApplication        : Starting TurkcellAtmProjectApplication using Java 18.0.1.1 on TC20033559 with PID 6564 (D:\TurkcellAtmProject\target\classes started by TCBZOR in D:\TurkcellAtmProject)
+2022-07-22 10:37:55.757  INFO 6564 --- [restartedMain] c.t.TurkcellAtmProjectApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:37:55.800  INFO 6564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-22 10:37:55.800  INFO 6564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-22 10:37:56.596  INFO 6564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-22 10:37:56.597  INFO 6564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-07-22 10:37:56.604  INFO 6564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2022-07-22 10:37:56.611  INFO 6564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-22 10:37:56.612  INFO 6564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-22 10:37:56.618  INFO 6564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2022-07-22 10:37:57.275  INFO 6564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-22 10:37:57.282  INFO 6564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-22 10:37:57.283  INFO 6564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-07-22 10:37:57.438  INFO 6564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-22 10:37:57.439  INFO 6564 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1639 ms
+2022-07-22 10:37:57.552  INFO 6564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-22 10:37:57.821  INFO 6564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-22 10:37:57.833  INFO 6564 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/turkcell_db'
+2022-07-22 10:37:57.957  INFO 6564 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-22 10:37:58.004  INFO 6564 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-07-22 10:37:58.140  INFO 6564 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-22 10:37:58.240  INFO 6564 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-07-22 10:37:58.442  INFO 6564 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-22 10:37:58.449  INFO 6564 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-22 10:37:58.561  WARN 6564 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-22 10:37:59.369  WARN 6564 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-22 10:37:59.593  WARN 6564 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f9ed50b0-8a33-4220-8639-f4eb5fccade2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-22 10:37:59.688  INFO 6564 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-22 10:37:59.706  INFO 6564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40936d39, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64649f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@38b0ce9, org.springframework.security.web.header.HeaderWriterFilter@291b8d7e, org.springframework.web.filter.CorsFilter@12bd517e, org.springframework.security.web.csrf.CsrfFilter@46630a5c, org.springframework.security.web.authentication.logout.LogoutFilter@5a4e5057, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3350e9d8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5ef10b15, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73bacddb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6e80f74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28f41edf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fa306c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@281b9c30, org.springframework.security.web.session.SessionManagementFilter@6febd2ef, org.springframework.security.web.access.ExceptionTranslationFilter@3b909b4c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21c2043]
+2022-07-22 10:37:59.843  INFO 6564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-22 10:37:59.889  INFO 6564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-22 10:37:59.905  INFO 6564 --- [restartedMain] c.t.TurkcellAtmProjectApplication        : Started TurkcellAtmProjectApplication in 4.462 seconds (JVM running for 5.069)
+2022-07-22 10:38:14.268  INFO 6564 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:38:14.268  INFO 6564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:38:14.269  INFO 6564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
